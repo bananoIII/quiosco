@@ -16,7 +16,7 @@ export default function OrderPage() {
     refreshInterval: 10000,
     revalidateOnFocus: false,
   });
-  if (isLoading) return "cargando...";
+  if (isLoading) return <p>cargando...</p>;
   if (data)
     return (
       <>
