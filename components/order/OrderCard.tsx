@@ -2,11 +2,11 @@ import { completedOrder } from "@/actions/complete-order-action";
 import { OrderWhitProducts } from "@/src/types";
 import { formatCurrency } from "@/src/utils";
 
-type OrderCard = {
+type OrderCardPropd = {
   order: OrderWhitProducts;
 };
 
-export default function OrderCard({ order }: OrderWhitProducts) {
+export default function OrderCard({ order }: OrderCardPropd) {
   return (
     <section
       aria-labelledby="summary-heading"
